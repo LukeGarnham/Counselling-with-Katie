@@ -1,0 +1,13 @@
+body {
+    height: 2000vh;
+    padding-top: 56px;
+}
+
+/* Styled the navbar (ID) to get the hide on scroll down/appear on scroll up effect */
+/* https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.5s, background 0.5s; /* Transition effect when sliding down (and up) */
+}

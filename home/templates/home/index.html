@@ -1,5 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 
+
+
 {% block content %}
+    <h1>Hello</h1>
+{% endblock %}
+
+
+
+{% block postload_js %}
+    <!-- Set page padding to 0px and make the navbar transparent at the top of the page -->
+    <!-- https://stackoverflow.com/questions/36246878/how-to-make-a-transparent-navbar-visible-when-scrolling -->
+    <!-- <script>
+        $('body').css('padding-top', '0px');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+                $('#navbar').css('background','red');
+            } else {
+                $('#navbar').css('background','transparent');
+            }
+        });
+    </script> -->
 {% endblock %}
