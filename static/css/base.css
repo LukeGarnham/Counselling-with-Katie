@@ -1,13 +1,74 @@
-body {
+/* body {
     height: 2000vh;
-    padding-top: 56px;
-}
+    padding-top: 0px;
+} */
 
 /* Styled the navbar (ID) to get the hide on scroll down/appear on scroll up effect */
 /* https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
+
 #navbar {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  width: 100%;
-  transition: top 0.5s, background 0.5s; /* Transition effect when sliding down (and up) */
+  width: 100%; */
+  /* Transition effect when sliding down (and up) */
+  /* transition: top 0.5s, background 0.5s; */
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- Global */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Merriweather', sans-serif ;
+  color: #3B3638;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+  color: inherit;
+}
+
+.padding-1500 {
+  padding-left: clamp(15px, 4vw, 60px);
+  padding-right: clamp(15px, 4vw, 60px);
+}
+
+/* ----------------------------------------------------------------------------------------------------------- NavBar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px clamp(15px, 4vw, 60px);
+  background-color: #9BD3CB;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  color: #3B3638;
+}
+.nav-link {
+  padding: 10px 30px;
+  font-size: 16px;
+}
+.nav-link:hover {
+  color: #fff;
+  background-color: #129A7D;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- Media Queries */
+
+@media (min-width: 1620px) {
+  .padding-1500 {
+    padding-left: calc(50% - 750px);
+    padding-right: calc(50% - 750px);
+  }
 }
